@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dungeon Tracker</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./javascript.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <h1 class="title">Dungeon Tracker</h1>
+    </header>
+  <main class="main container">
+    <button class="btn btn-add" id="addCharBtn">Add Character</button>
+    <div class="initiative-grid" id="initiativeGrid"></div>
+  </main>
+    <footer class="footer">
+        <p>
+            Copyright Ⓒ
+            <script>
+                document.write(new Date().getFullYear())
+            </script>
+            Dungeon-Tracker
+        </p>
+    </footer>
+    <div class="modal" id="addCharModal">
+        <form class="add-char-form" id="addCharForm">
+            <h3>Add New Character</h3>
+            <input 
+            class="input"
+            type="text"
+            id="title"
+            placeholder="Name"
+            required
+            maxlength="100"
+            />
+            <input 
+            class="input"
+            type="number"
+            id="AC"
+            placeholder="AC"
+            required
+            maxlength="100"
+            /> 
+            <input 
+            class="input"
+            type="number"
+            id="hitPoints"
+            placeholder="Hit Points"
+            required
+            maxlength="1000"
+            /> 
+            <button class="btn submit-btn" type="submit">Submit</button>
+        </form>
+    </div>
+    <div class="overlay" id="overlay"></div>
+</body>
+
+</html>
